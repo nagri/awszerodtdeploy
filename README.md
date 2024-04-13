@@ -84,22 +84,22 @@ and stitch them together to serve an application that was created using the EC2 
 
 Say you want to roll back to the last version of the Launch template
 
-''' 
+``` 
 go run cmd/deployzerodtapp/deployzerodtapp.go --rollback`
-'''
+```
 
 Say you want to rollback to version 7
 
-''' 
+``` 
 go run cmd/deployzerodtapp/deployzerodtapp.go --rollback --version=7`
-'''
+```
 
 ## You can pass a config file as well
 The config file contains configurations for the launch template including a script that initializes the EC2 instance to serve the application.
 
-''' 
+``` 
 go run cmd/deployzerodtapp/deployzerodtapp.go --configfile=/path/of/your/yaml/file.yaml`
-'''
+```
 
 The yaml is tightly coupled with the code you can see the example at 
 `cmd/deployzerodtapp/configs/configs.yaml` or this
@@ -131,7 +131,7 @@ ami_init_script: |
 
 ## Run Test cases
 
-''' 
+``` 
 go test ./...`
-'''
+```
 
