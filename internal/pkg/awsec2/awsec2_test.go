@@ -19,7 +19,7 @@ func TestCheckLaunchTemplate(t *testing.T) {
 		DefaultVersion: 1,
 		SourceVersion:  1,
 		TagKey:         "Group",
-		TagValue:       "TheApp",
+		TagValue:       "AppOne",
 		AmiID:          "ami-01dad638e8f31ab9a",
 		InstanceType:   "t3.micro",
 		AMIInitScript:  "yum update -y",

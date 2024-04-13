@@ -138,6 +138,7 @@ func (zdtapp *Zerodtapp) GetBlueASG() []string {
 	if err != nil {
 		fmt.Println(err)
 	}
+
 	zdtapp.BlueASG = asgARN
 
 	return asgARN

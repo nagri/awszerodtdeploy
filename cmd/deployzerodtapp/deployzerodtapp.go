@@ -19,7 +19,7 @@ func main() {
 
 	rollback := flag.Bool("rollback", false, "Rollback to previous version")
 	rollback_version := flag.Int64("version", 0, "Rollback Verison, default is previous version")
-	configFile := flag.String("f", "", "Config file")
+	configFile := flag.String("configfile", "", "Config file")
 	flag.Parse()
 
 	if *configFile == "" {
@@ -71,7 +71,7 @@ func main() {
 	//Get AWS ALB data based on the tags mentioned in the config file
 	albARN := zdtapp.GetAWSALB()
 	if albARN == nil {
-		// create a new ALB
+		// create a new ALconfigfile
 		zdtapp.CreateAWSALB(tgARN)
 	}
 
