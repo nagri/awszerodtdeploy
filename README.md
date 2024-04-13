@@ -132,6 +132,6 @@ ami_init_script: |
 ## Run Test cases
 
 ``` 
-go test ./...`
+go test ./...
 ```
 
