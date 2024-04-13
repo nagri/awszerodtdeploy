@@ -58,8 +58,15 @@ When the next Upgrade has to happen, User will create a new YAML file and run th
 - If no errors or issues are detected, after some time(time_before_deleting_old_instance_in_min from YAML) BlueASG will be deleted.
 
 ## How to run the app?
+You'll have to set AWS credentials as environment variables
 
-From inside the root directory run
+```
+export AWS_ACCESS_KEY_ID=ABCDS2NQIVNG6FMLYES   
+export AWS_SECRET_ACCESS_KEY=q0iX9ZQub6chPID4PlT786kIQwir145f2XYZkLvy
+export AWS_DEFAULT_REGION=eu-north-1
+```
+
+After you have cloned this repo, f  rom inside the root directory run
 
 `$ go run cmd/deployzerodtapp/deployzerodtapp.go`
 
